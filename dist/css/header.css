@@ -1,0 +1,36 @@
+.header{
+    width:100%;
+    text-align:center;
+}
+
+.header-main{
+    height:40px;
+    background:#1B1C24;
+    text-align:left;
+}
+
+.info-header{
+    box-sizing:border-box;
+    height:27px;
+    padding-top:7px;
+    background:rgba(0, 0, 0, 0.6);
+    font-size:12px;
+}
+
+.header-list{
+    display:inline-flex;
+    list-style:none;
+}
+.header-list li{
+    display:inline;
+}
+.header-list li:hover{
+    cursor:pointer;
+}
+
+.views{
+    width:160px;
+    margin-top:13px;
+    margin-left:100px;
+    justify-content:space-between;
+}

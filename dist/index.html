@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Builder</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header-main header">
+        <ul class="views header-list">
+            <li>Load</li>
+            <li>Save</li>
+            <li>Export</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="tools">
+            <div class="tool tool-selected" data-tool-type="Pointer">
+                <img src="assets/tool-icons/pointer.png" style="width:18px;">
+            </div>
+
+            <div class="tool" data-tool-type="Box">
+                <img src="assets/tool-icons/box.png" style="width:18px;">
+            </div>
+
+            <div class="tool" data-tool-type="Circle">
+                <img src="assets/tool-icons/circle.png" style="width:20px;">
+            </div>
+
+            <div class="tool" data-tool-type="Text">
+                <img src="assets/tool-icons/text.png" style="width:16px;">
+            </div>
+
+            <div class="tool" data-tool-type="Image">
+                <img src="assets/tool-icons/image.png" style="width:19px;">
+            </div>
+
+            <div class="tool" data-tool-type="Table">
+                <img src="assets/tool-icons/table.png" style="width:30px;">
+            </div>
+        </div>
+
+        <div class="page-container">
+            <!--<div class="default-container">
+                <button class="button-new-page">+</button>
+                <br>
+                <div class="new-page-text">Create New Page</div>
+            </div>-->
+
+            <div id="debug"></div>
+            
+            <canvas class="page" width="1024" height="576"></canvas>
+        </div>
+
+        <div class="info">
+            <div class="info-section">
+                <div class="info-header header">Transform</div>
+                <div class="info-content">
+                    <div class="info-prop">
+                        <div class="info-prop-title">X</div>
+                        <div class="info-prop-value" data-info-name="x">10</div>
+                    </div>
+                    <div class="info-prop">
+                        <div class="info-prop-title">W</div>
+                        <div class="info-prop-value" data-info-name="width">500</div>
+                    </div>
+                    <div class="info-prop">
+                        <div class="info-prop-title">Y</div>
+                        <div class="info-prop-value" data-info-name="y">10</div>
+                    </div>
+                    <div class="info-prop">
+                        <div class="info-prop-title">H</div>
+                        <div class="info-prop-value" data-info-name="height">130</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-header header">Main Color</div>
+                <div class="info-content">
+                    <div class="info-prop">
+                        <div class="info-prop-title">R</div>
+                        <div class="info-prop-value" data-info-name="r">255</div>
+                    </div>
+                    <div class="info-prop">
+                        <div class="info-prop-title">G</div>
+                        <div class="info-prop-value" data-info-name="g">25</div>
+                    </div>
+                    <div class="info-prop">
+                        <div class="info-prop-title">B</div>
+                        <div class="info-prop-value" data-info-name="b">100</div>
+                    </div>
+                    <div class="info-prop">
+                        <div class="info-prop-title">A</div>
+                        <div class="info-prop-value" data-info-name="a">255</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main"></div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
